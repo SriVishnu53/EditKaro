@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    padding: 1rem;
+    color: rgb(189, 4, 226); /* Default text color in header */
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center; /* Center-align logo and text vertically */
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+    height: 100px;
+    border-radius: 60%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circular area properly */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    font-size: 32px; /* Increased size for the logo text */
+    color: rgb(189, 4, 226); /* Change logo text color */
+    font-weight: bold; /* Make the logo text bold */
+}
+
+/* Navigation Styles */
+nav {
+    margin-left: auto; /* Pushes navigation to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Space between nav items */
+}
+
+nav a {
+    color: rgb(189, 4, 226); /* Change header text color for links */
+    text-decoration: none; /* No underline for links */
+    font-weight: bold; /* Make nav links bold */
+    font-size: 18px; /* Increased size for header text */
+}
+
+
+/* Section Styles */
+h1 {
+    font-size: 48px; /* Increased size for h1 */
+    text-align: center; /* Center-align heading */
+    margin: 1rem 0; /* Margin for spacing */
+    color: #048dcc;
+    font-weight: bold; /* Bold text for h1 */
+}
+
+h2 {
+    font-size: 32px; /* Increased size for h2 */
+    text-align: center;
+    color: #048dcc;
+    margin: 1rem 0;
+}
+
+.home, .portfolio, .about, .contact {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    /* Semi-transparent background for sections */
+}
+
+
+/* Center-align the services list */
+.services-list {
+    list-style-type: none; /* Default numbering */
+    padding-left: 20px; /* Indent the list */
+    text-align: center; /* Center-align the text */
+}
+
+.services-list li {
+    margin: 0.5rem 0; /* Space between items */
+    font-size: 18px; /* Adjust font size as desired */
+    color: #fff; /* Change text color to white */
+}
+
+/* Subscribe Section Styles */
+.subscribe {
+    padding: 2rem; /* Padding for spacing */
+    max-width: 600px; /* Maximum width for the section */
+    margin: 2rem auto; /* Center the section */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+    color: white; /* Text color */
+}
+
+.subscribe h2 {
+    font-size: 32px; /* Heading size */
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+.subscribe form {
+    display: flex; /* Use flexbox for form layout */
+    justify-content: center; /* Center align form elements */
+    gap: 0.5rem; /* Space between input and button */
+}
+
+.subscribe input {
+    padding: 0.5rem; /* Padding for input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 4px; /* Rounded corners */
+    color: black; /* Input text color */
+    width: 300px; /* Width for input */
+}
+
+.subscribe button {
+    padding: 0.5rem 1rem; /* Padding for button */
+    background-color: rgb(189, 4, 226); /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor on hover */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Button Hover Effects */
+.subscribe button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+
+/* Subscription Form Styles */
+form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center the form */
+    gap: 1rem; /* Space between inputs */
+    max-width: 300px; /* Maximum width for forms */
+    margin: 0 auto; /* Center the forms */
+}
+
+input, textarea {
+    padding: 0.5rem; /* Reduced padding for input fields */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    color: black; /* Input text color */
+    width: 100%; /* Full width */
+}
+
+button {
+    padding: 0.5rem; /* Reduced padding for button */
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor on hover */
+    width: 100%; /* Full width */
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+/* Portfolio Grid Styles */
+.portfolio-grid {
+    display: flex; /* Use flexbox for the portfolio layout */
+    justify-content: center; /* Center the items */
+    gap: 1rem; /* Space between portfolio items */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.portfolio-item {
+    flex: 1 1 300px; /* Allow items to grow and shrink, with a base size */
+    max-width: 300px; /* Set a max-width for each item */
+    text-align: center; /* Center text in portfolio items */
+}
+.team {
+    display: flex; /* Use flexbox for the team layout */
+    justify-content: center; /* Center the items */
+    gap: 2rem; /* Space between team members */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.team-member {
+    text-align: center; /* Center text for each team member */
+    max-width: 200px; /* Set a max width for team member cards */
+}
+
+.team-member img {
+    width: 100%; /* Make images responsive */
+    border-radius: 50%; /* Optional: round images for team members */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
+.mission-container h3 {
+    color: #ffcc00; /* Change this to your desired color for the Mission heading */
+}
+
+.vision-container h3 {
+    color: #ffcc00; /* Change this to your desired color for the Mission heading */
+}
+
+.team-container h3 {
+    color: #ffcc00; /* Change this to your desired color for the Mission heading */
+}
+/* Contact Us Section Styles */
+.contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    color: white; /* Text color */
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(189, 4, 226); /* Header color */
+    margin-bottom: 1rem; /* Space below header */
+}
+
+.contact p {
+    text-align: center; /* Center-align the paragraph */
+    font-size: 18px; /* Paragraph font size */
+    margin-bottom: 1.5rem; /* Space below paragraph */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 1rem; /* Space between inputs */
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+}
+
+input, textarea {
+    padding: 0.75rem; /* Increased padding for better touch target */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    color: black; /* Input text color */
+    width: 100%; /* Full width */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(189, 4, 226); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 0.75rem;
+    background-color: rgb(189, 4, 226); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+
+/* Other styles... */
+.mission-container,
+.vision-container,
+.team-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    margin-bottom: 0.5rem; /* Space below headings */
+}
+
+.team {
+    margin-top: 2rem; /* Space above the team section */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack header items on top of each other */
+        align-items: center; /* Center items */
+    }
+
+    .logo {
+        width: 60px; /* Adjust logo size for mobile */
+        height: 60px; /* Adjust height for mobile */
+    }
+
+    h1 {
+        font-size: 36px; /* Adjust h1 size for mobile */
+    }
+
+    h2 {
+        font-size: 28px; /* Adjust h2 size for mobile */
+    }
+
+    .portfolio-item {
+        max-width: 100%; /* Allow portfolio items to take full width */
+    }
+}
